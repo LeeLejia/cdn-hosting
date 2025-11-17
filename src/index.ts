@@ -355,14 +355,14 @@ export class CdnUploader {
       throw new Error('需要提供 GitHub 仓库名称，格式为：用户名/仓库名');
     }
 
-    const [owner, repo] = this.options.repo.split('/');
-    if (!owner || !repo) {
-      throw new Error('GitHub 仓库格式错误，应为：用户名/仓库名');
-    }
-
     const targetBranch = branch || this.options.branch;
     if (!targetBranch) {
       throw new Error('需要指定分支名称才能删除文件');
+    }
+
+    const [owner, repo] = this.options.repo.split('/');
+    if (!owner || !repo) {
+      throw new Error('GitHub 仓库格式错误，应为：用户名/仓库名');
     }
 
     const octokit = new Octokit({ auth: this.options.token });

@@ -1,15 +1,24 @@
 {
   "name": "github-cdn-uploader",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A command-line tool for uploading files to jsdelivr CDN via GitHub",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "README.md"
+  ],
   "bin": {
-    "cdnuploader": "./dist/index.js"
+    "cdnuploader": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "cdn",
@@ -27,8 +36,11 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^22.13.1",
     "@types/uuid": "^9.0.8",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
     "typescript": "^5.7.3"
   }
 }
