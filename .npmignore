@@ -1,0 +1,35 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Test files
+__tests__/
+*.test.ts
+*.spec.ts
+*.test.js
+*.test.d.ts
+coverage/
+*.log
+dist/__tests__/
+
+# Development files
+tsconfig.json
+jest.config.js
+.git/
+.gitignore
+.npmrc
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts (keep dist/)
+*.map
+
+# Documentation (keep README.md)
+CHANGELOG.md
+LICENSE.txt

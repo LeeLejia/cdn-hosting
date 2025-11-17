@@ -125,18 +125,36 @@ export class CdnUploader {
     try {
       if (targetBranchName) {
         // 检查目标分支是否存在
+        let branchExists = false;
         try {
           await octokit.rest.git.getRef({
             owner,
             repo,
             ref: `heads/${targetBranchName}`
           });
+          branchExists = true;
+        } catch (error: any) {
+          // 只有当错误是404（分支不存在）时，才认为分支不存在
+          if (error.status !== 404) {
+            throw error;
+          }
+          branchExists = false;
+        }
 
+        if (branchExists) {
+          // 分支存在
           if (this.options.force) {
             // 强制覆盖模式
             if (prefixPath) {
               // 如果指定了prefix，仅删除prefix目录下的内容
-              await this.deleteDirectoryContents(octokit, owner, repo, targetBranchName, prefixPath);
+              try {
+                await this.deleteDirectoryContents(octokit, owner, repo, targetBranchName, prefixPath);
+              } catch (error: any) {
+                // 如果目录不存在或为空，忽略错误继续上传
+                if (error.status !== 404 && !error.message?.includes('目录不存在') && !error.message?.includes('删除目录内容失败')) {
+                  throw error;
+                }
+              }
               // 上传新文件到目标分支
               await this.uploadFiles(octokit, owner, repo, files, sourceDir, prefixPath, targetBranchName);
             } else {
@@ -180,7 +198,7 @@ export class CdnUploader {
             await this.uploadFiles(octokit, owner, repo, files, sourceDir, prefixPath, targetBranchName);
             return targetBranchName;
           }
-        } catch (error) {
+        } else {
           // 目标分支不存在，创建新分支
           const newBranch = await this.createEmptyBranch(octokit, owner, repo, targetBranchName);
           await this.uploadFiles(octokit, owner, repo, files, sourceDir, prefixPath, newBranch);
@@ -355,14 +373,14 @@ export class CdnUploader {
       throw new Error('需要提供 GitHub 仓库名称，格式为：用户名/仓库名');
     }
 
-    const [owner, repo] = this.options.repo.split('/');
-    if (!owner || !repo) {
-      throw new Error('GitHub 仓库格式错误，应为：用户名/仓库名');
-    }
-
     const targetBranch = branch || this.options.branch;
     if (!targetBranch) {
       throw new Error('需要指定分支名称才能删除文件');
+    }
+
+    const [owner, repo] = this.options.repo.split('/');
+    if (!owner || !repo) {
+      throw new Error('GitHub 仓库格式错误，应为：用户名/仓库名');
     }
 
     const octokit = new Octokit({ auth: this.options.token });
