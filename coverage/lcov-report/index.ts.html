@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.18% </span>
+                <span class="strong">16.41% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>33/192</span>
+                <span class='fraction'>33/201</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">27.27% </span>
+                <span class="strong">22.34% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>21/77</span>
+                <span class='fraction'>21/94</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">17.36% </span>
+                <span class="strong">16.58% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>33/190</span>
+                <span class='fraction'>33/199</span>
             </div>
         
             
@@ -642,7 +642,25 @@
 <a name='L577'></a><a href='#L577'>577</a>
 <a name='L578'></a><a href='#L578'>578</a>
 <a name='L579'></a><a href='#L579'>579</a>
-<a name='L580'></a><a href='#L580'>580</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L580'></a><a href='#L580'>580</a>
+<a name='L581'></a><a href='#L581'>581</a>
+<a name='L582'></a><a href='#L582'>582</a>
+<a name='L583'></a><a href='#L583'>583</a>
+<a name='L584'></a><a href='#L584'>584</a>
+<a name='L585'></a><a href='#L585'>585</a>
+<a name='L586'></a><a href='#L586'>586</a>
+<a name='L587'></a><a href='#L587'>587</a>
+<a name='L588'></a><a href='#L588'>588</a>
+<a name='L589'></a><a href='#L589'>589</a>
+<a name='L590'></a><a href='#L590'>590</a>
+<a name='L591'></a><a href='#L591'>591</a>
+<a name='L592'></a><a href='#L592'>592</a>
+<a name='L593'></a><a href='#L593'>593</a>
+<a name='L594'></a><a href='#L594'>594</a>
+<a name='L595'></a><a href='#L595'>595</a>
+<a name='L596'></a><a href='#L596'>596</a>
+<a name='L597'></a><a href='#L597'>597</a>
+<a name='L598'></a><a href='#L598'>598</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -771,9 +789,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -781,6 +808,15 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -1348,18 +1384,36 @@ export class CdnUploader {
 <span class="cstat-no" title="statement not covered" >    try {</span>
 <span class="cstat-no" title="statement not covered" >      if (targetBranchName) {</span>
         // 检查目标分支是否存在
+        let branchExists = <span class="cstat-no" title="statement not covered" >false;</span>
 <span class="cstat-no" title="statement not covered" >        try {</span>
 <span class="cstat-no" title="statement not covered" >          await octokit.rest.git.getRef({</span>
             owner,
             repo,
             ref: `heads/${targetBranchName}`
           });
+<span class="cstat-no" title="statement not covered" >          branchExists = true;</span>
+        } catch (error: any) {
+          // 只有当错误是404（分支不存在）时，才认为分支不存在
+<span class="cstat-no" title="statement not covered" >          if (error.status !== 404) {</span>
+<span class="cstat-no" title="statement not covered" >            throw error;</span>
+          }
+<span class="cstat-no" title="statement not covered" >          branchExists = false;</span>
+        }
 &nbsp;
+<span class="cstat-no" title="statement not covered" >        if (branchExists) {</span>
+          // 分支存在
 <span class="cstat-no" title="statement not covered" >          if (this.options.force) {</span>
             // 强制覆盖模式
 <span class="cstat-no" title="statement not covered" >            if (prefixPath) {</span>
               // 如果指定了prefix，仅删除prefix目录下的内容
-<span class="cstat-no" title="statement not covered" >              await this.deleteDirectoryContents(octokit, owner, repo, targetBranchName, prefixPath);</span>
+<span class="cstat-no" title="statement not covered" >              try {</span>
+<span class="cstat-no" title="statement not covered" >                await this.deleteDirectoryContents(octokit, owner, repo, targetBranchName, prefixPath);</span>
+              } catch (error: any) {
+                // 如果目录不存在或为空，忽略错误继续上传
+<span class="cstat-no" title="statement not covered" >                if (error.status !== 404 &amp;&amp; !error.message?.includes('目录不存在') &amp;&amp; !error.message?.includes('删除目录内容失败')) {</span>
+<span class="cstat-no" title="statement not covered" >                  throw error;</span>
+                }
+              }
               // 上传新文件到目标分支
 <span class="cstat-no" title="statement not covered" >              await this.uploadFiles(octokit, owner, repo, files, sourceDir, prefixPath, targetBranchName);</span>
             } else {
@@ -1403,7 +1457,7 @@ export class CdnUploader {
 <span class="cstat-no" title="statement not covered" >            await this.uploadFiles(octokit, owner, repo, files, sourceDir, prefixPath, targetBranchName);</span>
 <span class="cstat-no" title="statement not covered" >            return targetBranchName;</span>
           }
-        } catch (error) {
+        } else {
           // 目标分支不存在，创建新分支
           const newBranch = <span class="cstat-no" title="statement not covered" >await this.createEmptyBranch(octokit, owner, repo, targetBranchName);</span>
 <span class="cstat-no" title="statement not covered" >          await this.uploadFiles(octokit, owner, repo, files, sourceDir, prefixPath, newBranch);</span>
@@ -1807,7 +1861,7 @@ program
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-11-17T05:04:21.341Z
+                at 2025-11-17T05:06:23.475Z
             </div>
         <script src="prettify.js"></script>
         <script>
