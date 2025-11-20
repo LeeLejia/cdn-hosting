@@ -2,7 +2,7 @@
 # NPM 发布脚本
 
 echo "=========================================="
-echo "准备发布 github-cdn-uploader@1.1.0"
+echo "准备发布 github-cdn-uploader@1.1.1"
 echo "=========================================="
 
 # 检查是否已登录
@@ -30,7 +30,7 @@ fi
 # 检查当前版本
 CURRENT_VERSION=$(npm view github-cdn-uploader version 2>/dev/null || echo "未发布")
 echo "📦 当前npm上的版本: $CURRENT_VERSION"
-echo "📦 准备发布的版本: 1.1.0"
+echo "📦 准备发布的版本: 1.1.1"
 
 # 确认发布
 read -p "确认发布? (y/N): " -n 1 -r
