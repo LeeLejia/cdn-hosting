@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "donationQrURL": "https://cdn.tri-bank.online/projects/netpulse/donation/2026-10-03/donation-qr.jpg",
+  "groups": [
+    {
+      "name": "百度",
+      "symbol": "sparkle.magnifyingglass",
+      "iconKey": "baidu",
+      "tintName": "blue",
+      "targets": [
+        {
+          "name": "百度搜索",
+          "url": "https://www.baidu.com"
+        },
+        {
+          "name": "百度移动站",
+          "url": "https://m.baidu.com"
+        },
+        {
+          "name": "百度静态资源",
+          "url": "https://www.bdstatic.com"
+        },
+        {
+          "name": "百度图片资源",
+          "url": "https://www.bdimg.com"
+        }
+      ]
+    },
+    {
+      "name": "Google",
+      "symbol": "globe",
+      "iconKey": "google",
+      "tintName": "blue",
+      "targets": [
+        {
+          "name": "Google 搜索",
+          "url": "https://www.google.com"
+        },
+        {
+          "name": "Google 视频",
+          "url": "https://www.youtube.com"
+        },
+        {
+          "name": "Google 静态资源",
+          "url": "https://www.gstatic.com"
+        },
+        {
+          "name": "Google API",
+          "url": "https://www.googleapis.com"
+        }
+      ]
+    },
+    {
+      "name": "X",
+      "symbol": "bubble.left.and.bubble.right",
+      "iconKey": "x",
+      "tintName": "primary",
+      "targets": [
+        {
+          "name": "X",
+          "url": "https://x.com"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com"
+        },
+        {
+          "name": "X 短链接",
+          "url": "https://t.co"
+        },
+        {
+          "name": "X 图片资源",
+          "url": "https://pbs.twimg.com"
+        }
+      ]
+    },
+    {
+      "name": "王者荣耀",
+      "symbol": "gamecontroller.fill",
+      "iconKey": "honor-of-kings",
+      "tintName": "orange",
+      "targets": [
+        {
+          "name": "王者荣耀官网",
+          "url": "https://pvp.qq.com"
+        },
+        {
+          "name": "腾讯游戏资源",
+          "url": "https://game.gtimg.cn"
+        },
+        {
+          "name": "腾讯游戏 CDN",
+          "url": "https://gtimg.cn"
+        }
+      ]
+    },
+    {
+      "name": "和平精英",
+      "symbol": "gamecontroller.fill",
+      "iconKey": "peacekeeper-elite",
+      "tintName": "green",
+      "targets": [
+        {
+          "name": "和平精英官网",
+          "url": "https://gp.qq.com"
+        },
+        {
+          "name": "腾讯游戏资源",
+          "url": "https://game.gtimg.cn"
+        },
+        {
+          "name": "腾讯游戏 CDN",
+          "url": "https://gtimg.cn"
+        }
+      ]
+    },
+    {
+      "name": "英雄联盟手游",
+      "symbol": "gamecontroller.fill",
+      "iconKey": "league-mobile",
+      "tintName": "blue",
+      "targets": [
+        {
+          "name": "英雄联盟手游官网",
+          "url": "https://lolm.qq.com"
+        },
+        {
+          "name": "腾讯游戏资源",
+          "url": "https://game.gtimg.cn"
+        },
+        {
+          "name": "腾讯游戏 CDN",
+          "url": "https://gtimg.cn"
+        }
+      ]
+    },
+    {
+      "name": "金铲铲之战",
+      "symbol": "gamecontroller.fill",
+      "iconKey": "jcc",
+      "tintName": "orange",
+      "targets": [
+        {
+          "name": "金铲铲之战官网",
+          "url": "https://jcc.qq.com"
+        },
+        {
+          "name": "腾讯游戏资源",
+          "url": "https://game.gtimg.cn"
+        },
+        {
+          "name": "腾讯游戏 CDN",
+          "url": "https://gtimg.cn"
+        }
+      ]
+    },
+    {
+      "name": "三角洲行动",
+      "symbol": "gamecontroller.fill",
+      "iconKey": "delta-force",
+      "tintName": "green",
+      "targets": [
+        {
+          "name": "三角洲行动官网",
+          "url": "https://df.qq.com"
+        },
+        {
+          "name": "腾讯游戏资源",
+          "url": "https://game.gtimg.cn"
+        },
+        {
+          "name": "腾讯游戏 CDN",
+          "url": "https://gtimg.cn"
+        }
+      ]
+    }
+  ]
+}
