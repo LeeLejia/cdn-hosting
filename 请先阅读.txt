@@ -1,0 +1,10 @@
+认知与设计：临时下载包
+
+视频：直接打开 cognition-learning-video.mp4。
+
+完整工程包为4个分卷。
+Windows：双击 restore-project.bat，会生成 cognition-editable-project.zip。
+Mac或Linux：在本目录运行 sh restore-project.command，会合并并校验工程包。
+
+工程包生成后解压，可获得全部中间素材和调整脚本。
+原始素材完整保留，分卷仅用于适配上传大小限制。
