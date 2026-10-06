@@ -1,0 +1,1279 @@
+[
+  {
+    "number": 1,
+    "theme": "看见",
+    "title": "让信息被看见",
+    "question": "提示在眼前，为什么还是看不见？",
+    "filename": "01-see-the-information.mp4",
+    "scenes": [
+      {
+        "episode": 1,
+        "index": 0,
+        "section": "看见",
+        "title": "提示在屏幕上，为什么还是看不见？",
+        "visual": "hook",
+        "narration": "一个人要订机票。页面明明用红字提示手机号填错了，他却连点三次提交，以为网站卡住了。设计师觉得提示已经很醒目，用户为什么还看不见？关键在于，屏幕上存在的信息，不等于人脑真的处理了它。",
+        "beats": [
+          "连续提交",
+          "视线停在按钮",
+          "错误远在顶部"
+        ],
+        "source_chapters": [
+          1,
+          5,
+          8
+        ],
+        "source_scene": 0,
+        "stage_sentences": null,
+        "start": 0,
+        "end": 19.833333,
+        "animation_events": [
+          {
+            "start": 3.2,
+            "duration": 0.4666666666666667,
+            "kind": "click",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "start": 4.4,
+            "duration": 0.4666666666666667,
+            "kind": "click",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "start": 5.6,
+            "duration": 0.4666666666666667,
+            "kind": "click",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "start": 9.0375,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 13.9375,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          9.0375,
+          13.9375
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 1,
+        "section": "看见",
+        "title": "用户不是在看页面，而是在找目标",
+        "visual": "goal_filter",
+        "narration": "先看第一个问题。用户打开航班列表，脑中想的是几点出发、多少钱、能不能到达。他会主动寻找这些线索，其他信息即使很显眼，也可能被过滤。这就是为什么，设计师觉得突出的一块内容，用户却完全没注意到。判断信息是否醒目，不能只看颜色和大小，还要看它是否符合用户此刻的目标。",
+        "beats": [
+          "扫视整个页面",
+          "只寻找出发时间、价格",
+          "无关信息退出注意"
+        ],
+        "source_chapters": [
+          1,
+          8
+        ],
+        "source_scene": 2,
+        "stage_sentences": null,
+        "start": 19.833333,
+        "end": 48.4,
+        "animation_events": [
+          {
+            "start": 8.425,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 20.55,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          8.425,
+          20.55
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 2,
+        "section": "看见",
+        "title": "结构先于细节，决定人怎么读",
+        "visual": "visual_structure",
+        "narration": "既然用户在找线索，页面就应该帮他找。把出发时间、到达时间、票价混在一大段话里，用户要先读完，才能比较。把同类信息放在固定位置，突出关键差异，他就能一眼找到候选航班，再看必要细节。信息并没有减少，阅读方式却变了：从被迫逐字读，变成有目的地扫视。",
+        "beats": [
+          "同样的航班信息，混成一段",
+          "起飞、到达、价格有固定位置",
+          "先找到差异，再读细节"
+        ],
+        "source_chapters": [
+          2,
+          3,
+          6
+        ],
+        "source_scene": 3,
+        "stage_sentences": null,
+        "start": 48.4,
+        "end": 75.3,
+        "animation_events": [
+          {
+            "start": 11.2375,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 19.325,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          11.2375,
+          19.325
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 3,
+        "section": "看见",
+        "title": "间距和样式，在悄悄表达关系",
+        "visual": "grouping",
+        "narration": "这种结构能起作用，是因为视觉会自动组织关系。彼此靠近的内容，会被看成一组；样式相同的内容，会被理解为同类。书中的格式塔原理，在设计里最直接的用途，就是让视觉关系符合实际关系。同一航班的时间和价格应该靠近，不同航班之间应该拉开。间距不是装饰，它会影响用户把哪个价格配给哪趟航班。",
+        "beats": [
+          "字段距离相同，看不出归属",
+          "同一航班靠近，不同航班分开",
+          "相同样式表达相同含义"
+        ],
+        "source_chapters": [
+          2,
+          3
+        ],
+        "source_scene": 4,
+        "stage_sentences": null,
+        "start": 75.3,
+        "end": 106.16666699999999,
+        "animation_events": [
+          {
+            "start": 4.725,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          }
+        ],
+        "state_anchors": [
+          0,
+          4.725,
+          18.825
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 4,
+        "section": "看见",
+        "title": "错误提示，应出现在下一眼会看的地方",
+        "visual": "near_error",
+        "narration": "再回到开头的错误。用户点击提交时，注意力停在按钮附近。人眼只有正在注视的小区域看得清，周边信息要粗糙得多。把报错放在页面最上面，就在要求他主动转移视线去发现问题。更好的做法，是把错误放在相关字段旁，并说明怎么修正。比如手机号少了一位，就直接指出位数不正确，而不是笼统地说提交失败。",
+        "beats": [
+          "点击提交，注意力在底部",
+          "把报错移到出错字段旁",
+          "指出问题，也指出修正方法"
+        ],
+        "source_chapters": [
+          5,
+          8
+        ],
+        "source_scene": 5,
+        "stage_sentences": null,
+        "start": 106.16666699999999,
+        "end": 137.633334,
+        "animation_events": [
+          {
+            "start": 6.5,
+            "duration": 2.4,
+            "kind": "gaze",
+            "before": 0,
+            "after": 0
+          },
+          {
+            "start": 18.0625,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 23.75,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          18.0625,
+          23.75
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 5,
+        "section": "看见",
+        "title": "重要含义，需要不止一种线索",
+        "visual": "color_meaning",
+        "narration": "就近显示还不够，如果错误只靠红色表达，仍然有人分辨不出来。色觉差异、屏幕和环境光，都会影响颜色。给红框配上明确文字和符号，含义就更稳定。这也解释了一个重要原则：颜色可以加强信息，却不应独自承担信息。去掉颜色后，用户仍然应该知道哪里出了问题。",
+        "beats": [
+          "只有红色边框",
+          "加上符号与具体文字",
+          "去掉颜色，含义仍然清楚"
+        ],
+        "source_chapters": [
+          4,
+          5
+        ],
+        "source_scene": 6,
+        "stage_sentences": null,
+        "start": 137.633334,
+        "end": 164.033334,
+        "animation_events": [
+          {
+            "start": 10.4125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 21.4625,
+            "duration": 0.8,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          10.4125,
+          21.4625
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 6,
+        "section": "看见",
+        "title": "强调太多，等于没有重点",
+        "visual": "attention_budget",
+        "narration": "但不要由此得出，所有信息都该加粗、变红、弹窗。注意力是有限的，每一处强调都在竞争。确认框如果反复出现，用户会形成习惯，直接关掉，真正重要的风险也可能被忽略。好的设计需要建立优先级：普通信息保持安静，任务关键状态容易发现，确实需要处理的风险才打断操作。",
+        "beats": [
+          "所有内容都在争抢注意",
+          "重复确认变成自动关闭",
+          "只突出当前任务真正重要的信号"
+        ],
+        "source_chapters": [
+          1,
+          5,
+          7,
+          8
+        ],
+        "source_scene": 7,
+        "stage_sentences": null,
+        "start": 164.033334,
+        "end": 191.76666699999998,
+        "animation_events": [
+          {
+            "start": 9.125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 17.2,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          9.125,
+          17.2
+        ]
+      },
+      {
+        "episode": 1,
+        "index": 7,
+        "section": "看见",
+        "title": "出现在下一眼，也符合此刻的目标",
+        "visual": "episode_end",
+        "narration": "所以，检查信息是否可见，要从用户此刻的目标和视线出发。用结构表达关系，把提示放在下一眼会看的地方，再用少量、明确的线索传达重点。",
+        "beats": [
+          "出现在下一眼，也符合此刻的目标"
+        ],
+        "source_chapters": [],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 191.76666699999998,
+        "end": 206.49999999999997,
+        "animation_events": [
+          {
+            "start": 4.8388800000000005,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 9.677760000000001,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          4.8388800000000005,
+          9.677760000000001
+        ]
+      }
+    ],
+    "duration": 206.49999999999997
+  },
+  {
+    "number": 2,
+    "theme": "理解",
+    "title": "减少理解负担",
+    "question": "人还要记住什么，才能继续？",
+    "filename": "02-reduce-mental-effort.mp4",
+    "scenes": [
+      {
+        "episode": 2,
+        "index": 8,
+        "section": "理解",
+        "title": "选完航班，还得在脑中接力？",
+        "visual": "episode_open",
+        "narration": "选好航班，下一步填写旅客信息。如果时间、价格和刚才的选择都消失了，用户就得一边填表，一边在脑中维持这些内容。怎样让这个流程少费脑？",
+        "beats": [
+          "选择航班",
+          "填写旅客信息"
+        ],
+        "source_chapters": [
+          7,
+          8
+        ],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 0,
+        "end": 15.166667,
+        "animation_events": [
+          {
+            "start": 3.525,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 12.0875,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          3.525,
+          12.0875
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 9,
+        "section": "理解",
+        "title": "让人记住页面之间的信息，本身就是负担",
+        "visual": "memory_gap",
+        "narration": "工作记忆容量很小，而且需要注意力维持。填个证件号码，或者被消息打断，刚才记住的信息就可能丢失。这不是用户粗心，而是流程把信息接力的工作交给了大脑。",
+        "beats": [
+          "上一页选航班",
+          "下一页只剩输入框",
+          "转移注意，刚记住的内容就容易丢失"
+        ],
+        "source_chapters": [
+          7,
+          8
+        ],
+        "source_scene": 8,
+        "stage_sentences": null,
+        "start": 15.166667,
+        "end": 31.8,
+        "animation_events": [
+          {
+            "start": 4.4375,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          }
+        ],
+        "state_anchors": [
+          0,
+          4.4375,
+          10.525
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 10,
+        "section": "理解",
+        "title": "屏幕可以成为用户的外部记忆",
+        "visual": "visible_summary",
+        "narration": "把所选行程和费用摘要留在屏幕上，问题就变简单了。用户不用在脑中反复维持这些信息，可以随时看、随时确认。复杂操作拆成几步时，也应该保留足够上下文，让人知道做到哪里，前面选了什么。界面不只是操作入口，它还可以是外部记忆，替用户保存中间状态。",
+        "beats": [
+          "旅客填写区",
+          "行程与费用摘要始终可见",
+          "随时确认，随时返回修改"
+        ],
+        "source_chapters": [
+          7,
+          8
+        ],
+        "source_scene": 9,
+        "stage_sentences": null,
+        "start": 31.8,
+        "end": 57.866667,
+        "animation_events": [
+          {
+            "start": 0.5,
+            "duration": 0.8666666666666667,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 18.925,
+            "duration": 0.8666666666666667,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          0.5,
+          18.925
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 11,
+        "section": "理解",
+        "title": "能认出来，通常比凭空想起来容易",
+        "visual": "recognition",
+        "narration": "还有一种负担更隐蔽：要求用户凭空想起答案。我们容易认出熟悉的东西，却不一定能主动回忆出完整细节。常用旅客、最近的目的地、清晰的选项，都把回忆变成了识别。必须输入时，再给示例和自动补全。重点不是把所有字段变成下拉框，而是让用户在合适的地方看到线索，减少没有必要的回忆。",
+        "beats": [
+          "必须输入完整信息",
+          "显示常用旅客和明确选项",
+          "必要输入提供示例与补全"
+        ],
+        "source_chapters": [
+          7,
+          9
+        ],
+        "source_scene": 10,
+        "stage_sentences": null,
+        "start": 57.866667,
+        "end": 86.533334,
+        "animation_events": [
+          {
+            "start": 9.8,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 19.5625,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          9.8,
+          19.5625
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 12,
+        "section": "理解",
+        "title": "熟悉的规则，让操作逐渐不费脑",
+        "visual": "consistency",
+        "narration": "识别之外，我们还会利用已经学会的规则。每一步继续按钮都在右边，用户熟悉以后，就不必重新分析。如果最后一步突然交换按钮位置，很容易点错。这就是一致性的认知价值：让经验可以复用，让熟练操作逐渐少占注意力。同一概念保持同一个名称，同类动作遵循同样规则，比事后补一份说明书更有效。",
+        "beats": [
+          "熟悉位置形成预期",
+          "突然交换返回与继续",
+          "保持相同操作的含义和位置"
+        ],
+        "source_chapters": [
+          1,
+          7,
+          8,
+          10,
+          11
+        ],
+        "source_scene": 11,
+        "stage_sentences": null,
+        "start": 86.533334,
+        "end": 116.333334,
+        "animation_events": [
+          {
+            "start": 9.675,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 14.1625,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          9.675,
+          14.1625
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 13,
+        "section": "理解",
+        "title": "敢于尝试，才容易学会",
+        "visual": "recovery",
+        "narration": "不过，熟练不是看懂说明就自动发生的，它需要实践。用户如果觉得点错一次就会造成损失，就不敢探索，也更难学会。修改航班时，先展示新费用和规则，再让他确认；允许回退，能撤销的操作提供撤销。清晰示例和可恢复的尝试，让用户在做任务的过程中建立经验。这里的关键是降低试错成本，而不是增加更多警告。",
+        "beats": [
+          "一改就产生不可逆后果",
+          "先预览新费用与规则",
+          "确认前可返回，错误后可恢复"
+        ],
+        "source_chapters": [
+          10,
+          11
+        ],
+        "source_scene": 12,
+        "stage_sentences": null,
+        "start": 116.333334,
+        "end": 148.533334,
+        "animation_events": [
+          {
+            "start": 11.5125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 20.2125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          11.5125,
+          20.2125
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 14,
+        "section": "理解",
+        "title": "让文字服务判断，而不是解释内部机制",
+        "visual": "plain_language",
+        "narration": "界面语言也应该沿着用户的任务来写。校验失败这种内部说法，既没有说明哪里错了，也没有说明下一步该做什么。换成请检查证件号码，理解成本就低得多。书中提醒，阅读是一种需要学习的技能，用户熟练程度并不相同。减少冗余文字，用熟悉、统一、具体的表达，才能把精力留给任务判断。",
+        "beats": [
+          "内部术语：校验失败、状态码",
+          "任务语言：检查证件号码",
+          "短、具体、接近当前操作"
+        ],
+        "source_chapters": [
+          3,
+          6,
+          11
+        ],
+        "source_scene": 13,
+        "stage_sentences": null,
+        "start": 148.533334,
+        "end": 177.700001,
+        "animation_events": [
+          {
+            "start": 10.925,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 21.6625,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          10.925,
+          21.6625
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 15,
+        "section": "理解",
+        "title": "计算和比较，应该交给计算机",
+        "visual": "calculation",
+        "narration": "再看价格。如果用户要把票价、税费、行李费自己加起来，再和另一种方案比较，界面就在要求他做心算和推理。这些工作慢、费力，也容易出错。计算机完全可以算出真实总额，解释费用组成，并把方案差异放在一起。用户需要判断的是方案是否适合自己，而不是替系统完成加法。",
+        "beats": [
+          "票价760＋税费120＋行李80",
+          "系统算出应付960元",
+          "说明总额组成，支持比较"
+        ],
+        "source_chapters": [
+          3,
+          7,
+          10
+        ],
+        "source_scene": 14,
+        "stage_sentences": null,
+        "start": 177.700001,
+        "end": 206.133334,
+        "animation_events": [
+          {
+            "start": 14.7875,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 21.85,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          14.7875,
+          21.85
+        ]
+      },
+      {
+        "episode": 2,
+        "index": 16,
+        "section": "理解",
+        "title": "把上下文留在屏幕，把精力留给判断",
+        "visual": "episode_end",
+        "narration": "减少认知负担，并不是让用户不思考。而是把中间状态留在屏幕，用熟悉选项帮助识别，用稳定规则帮助学习，把计算交给系统，让人专注于自己的选择。",
+        "beats": [
+          "把上下文留在屏幕，把精力留给判断"
+        ],
+        "source_chapters": [],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 206.133334,
+        "end": 221.166667,
+        "animation_events": [
+          {
+            "start": 4.9368,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 9.8736,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          4.9368,
+          9.8736
+        ]
+      }
+    ],
+    "duration": 221.166667
+  },
+  {
+    "number": 3,
+    "theme": "完成",
+    "title": "让操作真正完成",
+    "question": "按钮点了，事情就办成了吗？",
+    "filename": "03-finish-the-task.mp4",
+    "scenes": [
+      {
+        "episode": 3,
+        "index": 17,
+        "section": "完成",
+        "title": "从点到按钮，到确认任务完成",
+        "visual": "episode_open",
+        "narration": "用户选好了机票，准备提交订单。按钮容易点到，只是第一步。他还需要知道系统有没有收到操作，最后有没有出票，结果又保存在哪里。",
+        "beats": [
+          "提交订单",
+          "确认结果"
+        ],
+        "source_chapters": [
+          8,
+          13,
+          14
+        ],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 0,
+        "end": 13.633333,
+        "animation_events": [
+          {
+            "start": 3.4125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 6.225,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          3.4125,
+          6.225
+        ]
+      },
+      {
+        "episode": 3,
+        "index": 18,
+        "section": "完成",
+        "title": "理解了，还要能顺利点到",
+        "visual": "target",
+        "narration": "当用户已经做出选择，第三个问题是能不能顺利完成动作。菲茨定律说明，指向目标的难度与距离和目标宽度有关。按钮看着大，实际只有文字能点，仍然难用。扩大合理的点击区域，给相邻操作留间距，把常用动作放在顺手的位置，都能减少不必要的操作困难。这一步不复杂，但经常被视觉美观掩盖。",
+        "beats": [
+          "按钮看起来大，点击区域却很小",
+          "扩大实际热区，拉开相邻操作",
+          "常用动作放在顺手的位置"
+        ],
+        "source_chapters": [
+          13
+        ],
+        "source_scene": 16,
+        "stage_sentences": null,
+        "start": 13.633333,
+        "end": 42.733333,
+        "animation_events": [
+          {
+            "start": 15.525,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 24.6,
+            "duration": 1.0,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          15.525,
+          24.6
+        ]
+      },
+      {
+        "episode": 3,
+        "index": 19,
+        "section": "完成",
+        "title": "用户要知道：操作是否达成了目标",
+        "visual": "action_feedback",
+        "narration": "点到了按钮，也不等于任务已经结束。用户的行动是一个循环：有目标，执行动作，再看结果是否符合预期。点击订票以后，他需要知道请求是否收到、订单是否在处理、票到底有没有出。如果界面只说请求已发送，评估这一步就断了。反馈必须对应用户关心的结果，而不只是报告系统内部做过一个动作。",
+        "beats": [
+          "点击提交",
+          "收到请求，不等于出票成功",
+          "反馈应说明当前结果与下一步"
+        ],
+        "source_chapters": [
+          8,
+          14
+        ],
+        "source_scene": 17,
+        "stage_sentences": null,
+        "start": 42.733333,
+        "end": 72.233333,
+        "animation_events": [
+          {
+            "start": 10.4875,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 22.5,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          10.4875,
+          22.5
+        ]
+      },
+      {
+        "episode": 3,
+        "index": 20,
+        "section": "完成",
+        "title": "先让人知道系统在工作，再让人等待",
+        "visual": "responsiveness",
+        "narration": "这里要区分计算性能和响应度。系统处理确实可能需要时间，但用户不应该一直猜它有没有收到操作。先及时确认请求，显示正在出票，再在结果确定后告知成功或失败，就能减少不确定感。反过来，即使计算很快，界面没有及时可见的反馈，用户也可能觉得卡住，反复点击，甚至放弃。",
+        "beats": [
+          "没有变化：不确定，于是反复点击",
+          "立即确认：已收到，正在出票",
+          "完成后明确显示出票结果"
+        ],
+        "source_chapters": [
+          14
+        ],
+        "source_scene": 18,
+        "stage_sentences": null,
+        "start": 72.233333,
+        "end": 100.966666,
+        "animation_events": [
+          {
+            "start": 10.125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 18.7875,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          10.125,
+          18.7875
+        ]
+      },
+      {
+        "episode": 3,
+        "index": 21,
+        "section": "完成",
+        "title": "等待状态应该可信，也应留有退路",
+        "visual": "honest_wait",
+        "narration": "等待更久时，反馈还必须可信。没有可靠进度，就如实显示正在处理，不要编造一个百分比。允许的情况下，让任务在后台继续，提供取消或后续查询入口。这里的重点不是让加载动画更漂亮，而是让用户知道发生了什么，还有什么选择。反馈把无法控制的等待，变成可以理解的过程。",
+        "beats": [
+          "无法估计时长，却展示虚假百分比",
+          "如实说明正在处理",
+          "允许的情况下后台等待或取消"
+        ],
+        "source_chapters": [
+          14
+        ],
+        "source_scene": 19,
+        "stage_sentences": null,
+        "start": 100.966666,
+        "end": 128.566666,
+        "animation_events": [
+          {
+            "start": 8.9375,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 15.275,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          8.9375,
+          15.275
+        ]
+      },
+      {
+        "episode": 3,
+        "index": 22,
+        "section": "完成",
+        "title": "主任务结束，系统也要接好收尾",
+        "visual": "finish",
+        "narration": "出票成功之后，用户的注意力很快会转向别的事。书中指出，主任务达成后，收尾步骤尤其容易被忘记。如果重要结果还要靠用户手动保存，流程就留下了缺口。把订单和行程保存好，明确告诉他以后去哪里查，就把收尾接住了。一个顺畅流程，不仅帮助人开始，也帮助人真正完成。",
+        "beats": [
+          "出票完成，注意力转移",
+          "自动保存订单与行程",
+          "以后能够直接找到结果"
+        ],
+        "source_chapters": [
+          8
+        ],
+        "source_scene": 20,
+        "stage_sentences": null,
+        "start": 128.566666,
+        "end": 156.333333,
+        "animation_events": [
+          {
+            "start": 15.7875,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 22.0625,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          15.7875,
+          22.0625
+        ]
+      },
+      {
+        "episode": 3,
+        "index": 23,
+        "section": "完成",
+        "title": "点得到、知结果、能收尾",
+        "visual": "episode_end",
+        "narration": "一个完整流程，要让用户点得到目标，等待时理解状态，结束时确认结果。系统接好收尾，用户才真的把事情做成。",
+        "beats": [
+          "点得到、知结果、能收尾"
+        ],
+        "source_chapters": [],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 156.333333,
+        "end": 168.5,
+        "animation_events": [
+          {
+            "start": 3.9576000000000007,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 7.915200000000001,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          3.9576000000000007,
+          7.915200000000001
+        ]
+      }
+    ],
+    "duration": 168.5
+  },
+  {
+    "number": 4,
+    "theme": "判断",
+    "title": "帮助用户判断",
+    "question": "理解了原理，怎样做出设计取舍？",
+    "filename": "04-make-better-decisions.mp4",
+    "scenes": [
+      {
+        "episode": 4,
+        "index": 24,
+        "section": "判断",
+        "title": "同一笔费用，为什么改变了选择？",
+        "visual": "episode_open",
+        "narration": "机票买好了，用户想申请退票。同样收取两百元费用，写成仅扣除两百元，或者会损失两百元，可能影响他的选择。设计怎样帮助判断，而不只是推动点击？",
+        "beats": [
+          "申请退票",
+          "理解选择后果"
+        ],
+        "source_chapters": [
+          12
+        ],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 0,
+        "end": 15.8,
+        "animation_events": [
+          {
+            "start": 3.4,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 11.2125,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          3.4,
+          11.2125
+        ]
+      },
+      {
+        "episode": 4,
+        "index": 25,
+        "section": "判断",
+        "title": "清楚呈现后果，才能帮助选择",
+        "visual": "decision_frame",
+        "narration": "人做选择，并不总是理性计算。损失厌恶和措辞都会影响判断。把总价、退改条件和选择后果清楚地放在一起，比用情绪化文案催促决定更有帮助。设计应该支持用户判断，而不是利用偏差替他作决定。",
+        "beats": [
+          "同一费用，不同措辞影响判断",
+          "总价、退改条件并列可见",
+          "让用户理解后果，再作决定"
+        ],
+        "source_chapters": [
+          12
+        ],
+        "source_scene": 15,
+        "stage_sentences": null,
+        "start": 15.8,
+        "end": 36.366667,
+        "animation_events": [
+          {
+            "start": 6.475,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 14.65,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          6.475,
+          14.65
+        ]
+      },
+      {
+        "episode": 4,
+        "index": 26,
+        "section": "判断",
+        "title": "准则需要权衡，不能当作操作配方",
+        "visual": "tradeoff",
+        "narration": "理解认知原理，也不等于得到一套永远正确的布局。小屏幕上，把所有信息都展开，可能很难阅读；全部拆成独立页面，又会增加记忆负担。比较合理的办法，往往是让关键上下文始终可见，细节按需展开。准则之间会冲突，需要围绕真实任务权衡。理论的价值，是解释为什么要这样取舍。",
+        "beats": [
+          "屏幕小，全部展开会拥挤",
+          "全部拆开，又增加记忆与跳转",
+          "关键上下文常驻，细节按需展开"
+        ],
+        "source_chapters": [
+          "引言",
+          3,
+          7,
+          8
+        ],
+        "source_scene": 22,
+        "stage_sentences": null,
+        "start": 36.366667,
+        "end": 64.733334,
+        "animation_events": [
+          {
+            "start": 13.3375,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 19.6875,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          13.3375,
+          19.6875
+        ]
+      },
+      {
+        "episode": 4,
+        "index": 27,
+        "section": "判断",
+        "title": "用真实任务，检验你的解释",
+        "visual": "user_test",
+        "narration": "最后，让一个第一次使用的人真正完成订票。观察他在哪里停顿，在哪里返回查信息，什么时候反复点击。别只问界面好不好看，而要看任务是否顺利。认知原理帮助我们提出有根据的改进，真实行为帮助我们判断改进有没有奏效。设计知识，就是在这种解释和验证中积累起来的。",
+        "beats": [
+          "让初次使用的人完成一次订票",
+          "观察停顿、回看与重复点击",
+          "用行为判断认知负担是否下降"
+        ],
+        "source_chapters": [
+          "序言",
+          6,
+          11
+        ],
+        "source_scene": 23,
+        "stage_sentences": null,
+        "start": 64.733334,
+        "end": 91.63333399999999,
+        "animation_events": [
+          {
+            "start": 4.25,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 14.275,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          4.25,
+          14.275
+        ]
+      },
+      {
+        "episode": 4,
+        "index": 28,
+        "section": "判断",
+        "title": "解释取舍，再用真实任务验证",
+        "visual": "episode_end",
+        "narration": "回到自己的设计，先问用户要付出哪些注意和记忆，再判断界面怎样分担这些成本。能解释取舍，还能用真实任务检验，准则才真正成为可用的知识。",
+        "beats": [
+          "解释取舍，再用真实任务验证"
+        ],
+        "source_chapters": [],
+        "source_scene": null,
+        "stage_sentences": [
+          1,
+          2
+        ],
+        "start": 91.63333399999999,
+        "end": 106.533334,
+        "animation_events": [
+          {
+            "start": 4.896000000000001,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 0,
+            "after": 1
+          },
+          {
+            "start": 9.792000000000002,
+            "duration": 0.4,
+            "kind": "state",
+            "before": 1,
+            "after": 2
+          }
+        ],
+        "state_anchors": [
+          0,
+          4.896000000000001,
+          9.792000000000002
+        ]
+      }
+    ],
+    "duration": 106.533334
+  }
+]

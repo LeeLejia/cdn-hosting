@@ -1,0 +1,40 @@
+《认知与设计》四集系列版（16:9）
+
+每集都有独立问题、案例解释和结论。总内容约12分钟，分别讨论：信息感知、认知负担、操作完成、判断与取舍。
+
+文件
+series-videos.zip：4集完整视频、对应字幕、讲稿与封面，直接解压观看。
+editable-materials.zip：可编辑讲稿、分镜、音频时间戳、关键画面、动画代码和制作记录。
+segment-videos.zip：29段视频及本次改动过的旧版本；解压后位于 cognition-series-project/scenes。
+cognition-series-project/fonts：字体与授权。将以上两个工程ZIP解压到同一目录，会合并成一个完整工程文件夹。
+
+修改
+1. 编辑 author.py：讲稿、每集顺序、开头和结尾。运行 python author.py 后重新生成 storyboard.json、episodes.json。
+2. 编辑 render.py：系列视觉、案例动画和封面。legacy.py 保存基础界面绘制函数。
+3. 编辑 assemble.py：画面出现时机、动画时长、字幕分句、剪辑和音量处理。
+4. 执行 python speech.py 生成修改过的旁白，再执行 python assemble.py 出片；也可运行 sh run.sh。
+5. 只重新拼接已有分段：python assemble.py --finalize-only。使用此选项前，应确认 scenes 中的视频就是当前想要的版本。
+
+环境
+Python 3.10或以上；ffmpeg（含libass）、ffprobe；pip install -r requirements.txt。
+中文字体已附带，重生成旁白时需要网络。默认使用晓晓中文声音。
+默认输出在工程同级 cognition_series_video 目录。
+
+保留的中间信息
+storyboard.json、episodes.json：内容结构与每集场景顺序。
+source_reference.json：上一版讲稿与原分镜，用于追溯和复用。
+audio：每段MP3、逐句时间戳和版本签名。
+frames：每段3个教学状态PNG与生成时间表。
+subtitles：每段ASS及SRT。
+scenes：每段可独立使用的MP4。
+revisions：源文件快照以及本次实际修改过的旧分段。
+系列时间轴.json：每段在各集中的位置和动画事件。
+
+动画过渡的逐帧PNG保留在本机制作目录motion中（约95MB）；下载工程附带关键状态、事件时间和生成代码，可重新生成同样的中间帧。素材包保留分段成片，能够直接剪辑，无须先重新渲染。
+
+本次优化
+- 按完整知识主题划分，补写每集开头结尾，删除长片的重复总览。
+- 提示位置移动、分组关系、按钮换位、点击区域扩展与局部视线示意，与解释同步。
+- 阅读期间保持画面稳定，减少无关动效。
+- 统一版式、字幕、集数标记与封面；旁白统一到约-16 LUFS。
+- 原长片和以前的工程都保留，本版使用独立下载分支。

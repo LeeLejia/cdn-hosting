@@ -1,0 +1,58 @@
+[
+  {
+    "episode": 1,
+    "title": "让信息被看见",
+    "filename": "01-see-the-information.mp4",
+    "duration_seconds": 206.58,
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "integrated_loudness_LUFS": -16.1,
+    "true_peak_dBFS": -1.3,
+    "subtitle_cues": 50,
+    "decode": "passed",
+    "sha256": "6fda28a75e830347dff9ac37cec4d2e63673164f8504a0ec13d99fb6817655f4"
+  },
+  {
+    "episode": 2,
+    "title": "减少理解负担",
+    "filename": "02-reduce-mental-effort.mp4",
+    "duration_seconds": 221.268,
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "integrated_loudness_LUFS": -16.1,
+    "true_peak_dBFS": -1.4,
+    "subtitle_cues": 52,
+    "decode": "passed",
+    "sha256": "23f4544c945de3f571141e2c799cc339c3c862021003d2f4259a9cdce906c755"
+  },
+  {
+    "episode": 3,
+    "title": "让操作真正完成",
+    "filename": "03-finish-the-task.mp4",
+    "duration_seconds": 168.56,
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "integrated_loudness_LUFS": -16.2,
+    "true_peak_dBFS": -1.1,
+    "subtitle_cues": 40,
+    "decode": "passed",
+    "sha256": "72f32fe0d7ea3ae1ee35ae9ce1c3b589aec51e3db90ba890a4e0a781409903cb"
+  },
+  {
+    "episode": 4,
+    "title": "帮助用户判断",
+    "filename": "04-make-better-decisions.mp4",
+    "duration_seconds": 106.585333,
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "integrated_loudness_LUFS": -16.1,
+    "true_peak_dBFS": -1.3,
+    "subtitle_cues": 26,
+    "decode": "passed",
+    "sha256": "315f22814d2a0b9f736ddd3807616d9292584b36bbaa76897160f0c1d74e1a1c"
+  }
+]
