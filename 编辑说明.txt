@@ -1,0 +1,32 @@
+认知与设计 V2：看见、理解、完成
+
+这版用一次虚构的订票任务，讲清认知原理如何导致界面问题，再演示改进。素材依据用户提供的精简文本改编。
+
+下载包中的内容
+1. cognition-learning-v2.mp4：新版成片。
+2. editable-materials.zip：可编辑讲稿、分镜、画面、旁白、字幕与制作脚本。
+3. segment-videos.zip：25段视频，便于直接替换或重新剪辑；也保留了本次修改过的响应度画面的上一版。
+4. cognition-v2-project/fonts：使用的字体与授权文件。将 editable-materials.zip 解压到当前目录，字体和工程会位于同一个 cognition-v2-project 文件夹内。
+
+调整方法
+- 只改叙述：编辑 author.py 中的 narration，再运行 python author.py、python speech.py、python assemble.py。
+- 改界面示例：编辑 render.py，再运行 python assemble.py。
+- 改字幕或画面出现时间：编辑 assemble.py 的分句逻辑与 ANCHORS。
+- 直接重新剪辑：使用 segment-videos.zip 内的分段MP4，或 editable-materials.zip 内独立旁白、PNG和字幕。
+- 整体时间轴：章节与分镜.json；字幕：中文字幕.srt；完整文字：讲稿.txt。
+
+运行环境
+Python 3.10或更高，ffmpeg（含libass）、ffprobe，以及 pip install -r requirements.txt。
+字体已附带；旁白重新生成需要网络，使用 edge-tts 的晓晓中文声音。
+构建脚本会把本机新成片写入工程同级 cognition_v2_video 目录。缓存会复用未变化的旁白；重新制作前会保留旧音频、分段视频和源文件快照。
+
+素材目录
+storyboard.json：机器可读分镜，每段包含讲稿、视觉设计、原书关联章节。
+audio：每段MP3、语句时间戳与音频版本签名。
+frames：每段的三个教学状态PNG；字幕独立叠加。
+subtitles：每段SRT及用于成片的ASS。
+scenes：分段成片及版本签名（位于 segment-videos.zip）。
+revisions：制作过程的源文件快照、实际修改过的旧画面视频。
+
+保留说明
+上一版21分钟视频和工程仍保留在原来的GitHub下载分支。这次使用独立的V2分支，不覆盖上一版。

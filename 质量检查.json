@@ -1,0 +1,11 @@
+{
+  "duration_seconds": 721.833333,
+  "width": 1920,
+  "height": 1080,
+  "scene_count": 25,
+  "subtitle_count": 159,
+  "max_caption_characters": 30,
+  "decode": "ffmpeg complete decode: no errors",
+  "source_chapters": "see storyboard.json",
+  "final_sha256": "4e5184423a3836d61afa3ecb3ea334bf325df0ca6e2d49872f49764874823b96"
+}
